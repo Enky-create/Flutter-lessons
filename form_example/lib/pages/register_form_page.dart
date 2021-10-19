@@ -93,7 +93,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
                 ),
               ),
               validator: _validateName,
-              onSaved: (value) => newUser.name = value!,
+              onSaved: (value) => newUser.name = _nameController.text,
             ),
             SizedBox(height: 10),
             TextFormField(
